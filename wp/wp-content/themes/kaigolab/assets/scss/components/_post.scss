@@ -1,0 +1,92 @@
+//
+// Common
+//
+.section-title {
+  font-size: 16px;
+  margin: 0;
+  padding: 8px 16px;
+  color: $white;
+  background-color: $section-title-color;
+  border-radius: 4px;
+  i {
+    margin-right: 5px;
+  }
+}
+
+
+//
+// Articles
+//
+.articles {
+  padding: 15px 0;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 1px dotted #ddd;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.articles__thumb {
+  float: left;
+  width: 140px;
+  line-height: 0;
+  font-size: 0;
+  img {
+    width: 140px;
+    height: auto;
+  }
+}
+.articles__main {
+  margin-left: 155px;
+  .post-categories {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+.articles__title {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+.articles__meta {
+  height: 100%;
+  overflow: hidden;
+}
+.articles__date,
+.articles__views {
+  margin: 0;
+  color: #888;
+  font-size: 13px;
+}
+.articles__date {
+  float: left;
+}
+.articles__views {
+  float: right;
+  i {
+    margin-right: 3px;
+  }
+}
+
+@include mobile {
+  .section-title {
+    border-radius: 0;
+  }
+  .articles {
+    padding: 15px;
+  }
+  .articles__thumb {
+    width: 100px;
+    img {
+      width: 100px;
+    }
+  }
+  .articles__main {
+    margin-left: 115px;
+  }
+  .articles__title {
+    font-size: 16px;
+  }
+}

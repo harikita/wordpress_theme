@@ -1,0 +1,15 @@
+@mixin laptop {
+  @media only screen and (max-width: $break-point-laptop) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: $break-point-tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: $break-point-mobile) {
+    @content;
+  }
+}
