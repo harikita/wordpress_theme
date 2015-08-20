@@ -6,6 +6,7 @@ namespace Brieze\Init;
  */
 function setup() {
     add_theme_support('post-thumbnails');       // アイキャッチ有効化
+    add_image_size( 'thumbs', 280, 280, true );
     remove_action('wp_head', 'wp_generator');   // WPバージョン番号の非表示
     register_nav_menu('footer_menu', 'フッターメニュー');
 }

@@ -2,7 +2,7 @@
 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
 <div class="articles">
   <div class="articles__thumb">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbs'); ?></a>
   </div>
   <div class="articles__main">
     <h2 class="articles__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

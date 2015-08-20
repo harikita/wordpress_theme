@@ -45,9 +45,7 @@ a {
   img {
     $logo-size: 24px;
     height: $logo-size;
-    position: absolute;
-    top: 50%;
-    margin-top: - $logo-size / 2;
+    margin-top: 12px;
   }
 }
 .head-search {
@@ -74,6 +72,10 @@ a {
   p {
     margin: 0;
   }
+  a {
+    color: $white;
+    font-weight: bold;
+  }
 }
 
 .ly-main {
@@ -96,6 +98,9 @@ a {
 }
 .ly-contents {
   float: left;
+  width: $site-width - ($sidebar-width) - 60px;
+}
+.home .ly-contents {
   width: $site-width - ($sidebar-width * 2) - 60px;
 }
 .ly-sidebar {
@@ -176,6 +181,7 @@ a {
 }
 .side-adsence {
   margin-top: 15px;
+  text-align: center;
 }
 .wpp-list {
   list-style: none;
@@ -244,6 +250,22 @@ a {
 
 
 @include laptop {
+  .ly-header {
+    .container {
+      position: relative;
+    }
+  }
+  .site-name {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  .head-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .container {
     width: auto;
   }
@@ -262,11 +284,11 @@ a {
       margin-right: $sidebar-width + 30px;
     }
   }
+  .home .ly-contents {
+    width: 100%;
+  }
   .ly-sidebar {
     margin-left: 0;
-  }
-  .site-name {
-    padding-left: 20px;
   }
   .ly-footer,
   .header-caps {
@@ -311,5 +333,14 @@ a {
   }
   .tag-cloud {
     margin: 5px 15px 15px 15px;
+  }
+  .side-adsence {
+    margin: 15px 0;
+  }
+  .header-caps {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }

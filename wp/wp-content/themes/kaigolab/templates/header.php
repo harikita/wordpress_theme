@@ -19,6 +19,14 @@ $logo = get_field('logo_img', 'option');
 </header>
 <div class="header-caps">
   <div class="container">
+    <?php if (is_home()): ?>
     <p><?php bloginfo('description'); ?></p>
+    <?php
+      else:
+        if ( function_exists('yoast_breadcrumb') ) {
+          yoast_breadcrumb('<div class="breadcrumbs">','</div>');
+        }
+      endif;
+    ?>
   </div>
 </div>
