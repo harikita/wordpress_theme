@@ -484,7 +484,8 @@ a {
     text-align: center;
     color: #fff;
     font-weight: bold;
-    font-size: 12px; }
+    font-size: 12px;
+    transition: .2s all ease-out; }
     .side-sns a:hover {
       text-decoration: none;
       opacity: .7; }
@@ -642,8 +643,10 @@ a {
     margin-bottom: 0; }
   .side-sns {
     margin: 0; }
-  .wpp-list li {
+  .wpp-list a {
     padding: 15px; }
+    .wpp-list a:before {
+      left: 15px; }
   .tag-cloud {
     margin: 5px 15px 15px 15px; }
   .side-adsence {
@@ -777,7 +780,8 @@ a {
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
-    border-radius: 4px; }
+    border-radius: 4px;
+    transition: .2s all ease-out; }
     .post__share a:hover {
       text-decoration: none;
       opacity: .7; }
