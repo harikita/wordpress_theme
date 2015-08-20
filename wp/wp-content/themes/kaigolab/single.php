@@ -19,3 +19,5 @@
   <?php get_template_part('templates/share'); ?>
 </div>
 <?php endwhile; endif; ?>
+
+<?php related_posts(); ?>

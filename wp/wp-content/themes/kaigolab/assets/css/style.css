@@ -762,6 +762,39 @@ a {
     height: 20px;
     vertical-align: middle; }
 
+.yarpp-related {
+  margin-top: 30px; }
+
+.related-post {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; }
+  .related-post + img {
+    display: none; }
+  .related-post li {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 20px; }
+    .related-post li:nth-child(2n) {
+      margin-right: 0; }
+  .related-post a {
+    display: block; }
+  .related-post .thumb {
+    width: 100px;
+    float: left;
+    font-size: 0; }
+    .related-post .thumb img {
+      width: 100px;
+      height: auto; }
+  .related-post .text {
+    margin-left: 115px; }
+  .related-post h3 {
+    font-size: 14px;
+    margin: 0; }
+
 @media only screen and (max-width: 600px) {
   .section-title {
     border-radius: 0; }
@@ -785,4 +818,18 @@ a {
     .post__share a {
       display: block;
       border-radius: 0;
-      text-align: center; } }
+      text-align: center; }
+  .related-post {
+    margin-top: 0; }
+    .related-post li {
+      width: auto;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 0;
+      border-bottom: 1px dotted #ccc; }
+      .related-post li:last-child {
+        border-bottom: none; }
+    .related-post a {
+      padding: 15px;
+      height: 100%;
+      overflow: hidden; } }
