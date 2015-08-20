@@ -30,3 +30,31 @@
     }
   }
 }
+
+@include mobile {
+  .ly-footer {
+    padding: 0;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .footer-nav {
+    height: 100%;
+    overflow: hidden;
+    li {
+      $border-style: 1px solid rgba(255,255,255,.2);
+      float: left;
+      display: block;
+      width: 50%;
+      border-right: $border-style;
+      border-bottom: $border-style;
+      box-sizing: border-box;
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      padding: 12px 10px;
+    }
+  }
+}
