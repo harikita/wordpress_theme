@@ -159,6 +159,9 @@
   .ly-sidebar {
     margin-left: 0;
   }
+  .ly-category {
+    display: none;
+  }
 }
 
 @include tablet {

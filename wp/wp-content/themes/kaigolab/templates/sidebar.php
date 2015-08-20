@@ -28,7 +28,7 @@
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-bullhorn"></i>PR</h2>
     <div class="side-adsence">
-      <img src="http://placehold.it/300x250">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy_ad.png">
     </div>
   </div>
 </div>
