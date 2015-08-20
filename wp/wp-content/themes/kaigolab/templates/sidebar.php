@@ -4,9 +4,10 @@
     <?php wpp_get_mostpopular(array(
       'order_by' => 'views',
       'limit' => 5,
+      'post_type' => 'post',
       'thumbnail_width' => 100,
       'thumbnail_height' => 100,
-      'post_html' => "<li><div class='thumb'>{thumb}</div><div class='text'><a href=\'{url}\'>{text_title}</a></div></li>"
+      'post_html' => "<li><a href=\'{url}\'><div class='thumb'>{thumb_img}</div><div class='text'>{text_title}</div></a></li>"
     )); ?>
   </div>
   <div class="sidebar-box">

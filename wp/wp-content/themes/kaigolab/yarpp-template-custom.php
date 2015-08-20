@@ -4,8 +4,8 @@ YARPP Template: Custom
 Description: KAIGO LAB - YARPP Template
 Author: rayfields
 */ ?>
-<h2 class="section-title"><i class="fa fa-heart"></i>関連する記事</h2>
 <?php if (have_posts()):?>
+<h2 class="section-title"><i class="fa fa-heart"></i>関連する記事</h2>
 <ul class="related-post">
 	<?php while (have_posts()) : the_post(); ?>
 	<li>
@@ -18,6 +18,4 @@ Author: rayfields
 	</li>
 	<?php endwhile; ?>
 </ul>
-<?php else: ?>
-<p>No related photos.</p>
-<?php endif; ?>
+<?php else: endif; ?>
