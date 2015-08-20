@@ -360,7 +360,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
-  color: #333;
+  color: #555;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -373,6 +373,46 @@ a {
   width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+
+.ly-main {
+  padding: 30px 0;
+  height: 100%;
+  overflow: hidden; }
+
+.ly-contents {
+  float: left;
+  width: 840px; }
+
+.home .ly-contents {
+  width: 540px; }
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    width: auto; }
+  .ly-main {
+    padding: 20px; }
+  .ly-contents {
+    width: 100%;
+    float: left;
+    margin-right: -300px; }
+    .ly-contents .inner {
+      position: relative;
+      margin-right: 330px; }
+  .home .ly-contents {
+    width: 100%; } }
+
+@media only screen and (max-width: 800px) {
+  .ly-contents {
+    float: none;
+    margin-bottom: 30px; }
+    .ly-contents .inner {
+      margin-right: 0; } }
+
+@media only screen and (max-width: 600px) {
+  .ly-contents {
+    margin-bottom: 0; }
+  .ly-main {
+    padding: 0; } }
 
 .ly-header {
   height: 50px;
@@ -419,10 +459,26 @@ a {
     color: #fff;
     font-weight: bold; }
 
-.ly-main {
-  padding: 30px 0;
-  height: 100%;
-  overflow: hidden; }
+@media only screen and (max-width: 1240px) {
+  .ly-header .container {
+    position: relative; }
+  .site-name {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    float: none; }
+  .head-search {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .header-caps .container {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media only screen and (max-width: 600px) {
+  .header-caps .container {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 .ly-category,
 .ly-sidebar {
@@ -431,13 +487,6 @@ a {
 .ly-category {
   float: left;
   margin-right: 30px; }
-
-.ly-contents {
-  float: left;
-  width: 840px; }
-
-.home .ly-contents {
-  width: 540px; }
 
 .ly-sidebar {
   float: right;
@@ -573,6 +622,29 @@ a {
       background-color: #8eca91;
       color: #fff; }
 
+@media only screen and (max-width: 1240px) {
+  .ly-sidebar {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 800px) {
+  .ly-sidebar {
+    width: auto;
+    float: none; } }
+
+@media only screen and (max-width: 600px) {
+  .sidebar-box {
+    margin-bottom: 0; }
+  .side-sns {
+    margin: 0; }
+  .wpp-list a {
+    padding: 15px; }
+    .wpp-list a:before {
+      left: 15px; }
+  .tag-cloud {
+    margin: 5px 15px 15px 15px; }
+  .side-adsence {
+    margin: 15px 0; } }
+
 .ly-footer {
   background-color: #cfc5b2;
   padding: 20px 0; }
@@ -591,69 +663,9 @@ a {
     font-weight: bold; }
 
 @media only screen and (max-width: 1240px) {
-  .ly-header .container {
-    position: relative; }
-  .site-name {
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
-    float: none; }
-  .head-search {
-    position: absolute;
-    right: 0;
-    top: 0; }
-  .container {
-    width: auto; }
-  .ly-main {
-    padding: 20px; }
-  .ly-category {
-    display: none; }
-  .ly-contents {
-    width: 100%;
-    float: left;
-    margin-right: -300px; }
-    .ly-contents .inner {
-      position: relative;
-      margin-right: 330px; }
-  .home .ly-contents {
-    width: 100%; }
-  .ly-sidebar {
-    margin-left: 0; }
-  .ly-footer .container,
-  .header-caps .container {
+  .ly-footer .container {
     padding-left: 20px;
     padding-right: 20px; } }
-
-@media only screen and (max-width: 800px) {
-  .ly-contents {
-    float: none;
-    margin-bottom: 30px; }
-    .ly-contents .inner {
-      margin-right: 0; }
-  .ly-sidebar {
-    width: auto;
-    float: none; } }
-
-@media only screen and (max-width: 600px) {
-  .ly-contents {
-    margin-bottom: 0; }
-  .ly-main {
-    padding: 0; }
-  .sidebar-box {
-    margin-bottom: 0; }
-  .side-sns {
-    margin: 0; }
-  .wpp-list a {
-    padding: 15px; }
-    .wpp-list a:before {
-      left: 15px; }
-  .tag-cloud {
-    margin: 5px 15px 15px 15px; }
-  .side-adsence {
-    margin: 15px 0; }
-  .header-caps .container {
-    padding-left: 15px;
-    padding-right: 15px; } }
 
 .section-title {
   font-size: 16px;
@@ -756,13 +768,11 @@ a {
 
 .post__body h3 {
   font-size: 18px;
-  color: #555;
   border-bottom: 1px solid #d29188;
   padding: 0 0 5px 0;
   margin: 30px 0 15px 0; }
 
 .post__body p {
-  color: #555;
   margin: 15px 0;
   line-height: 1.8; }
 
@@ -794,7 +804,7 @@ a {
   .post__share .line a {
     background-color: #86c682; }
   .post__share .line img {
-    height: 20px;
+    height: 18px;
     vertical-align: middle; }
 
 .yarpp-related {
@@ -863,7 +873,7 @@ a {
       float: none;
       margin-right: 0;
       margin-bottom: 0;
-      border-bottom: 1px dotted #ccc; }
+      border-bottom: 1px dotted #ddd; }
       .related-post li:last-child {
         border-bottom: none; }
     .related-post a {

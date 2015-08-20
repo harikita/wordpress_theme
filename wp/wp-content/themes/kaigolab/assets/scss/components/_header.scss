@@ -1,0 +1,92 @@
+//
+// Header
+//
+.ly-header {
+  height: $header-height;
+  background-color: $key-color;
+  .container {
+    height: $header-height;
+    overflow: hidden;
+  }
+}
+
+.site-name {
+  float: left;
+  height: $header-height;
+  position: relative;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  img {
+    $logo-size: 24px;
+    height: $logo-size;
+    margin-top: 12px;
+  }
+}
+
+.head-search {
+  float: right;
+}
+.head-search__btn {
+  width: $header-height;
+  height: $header-height;
+  line-height: $header-height;
+  text-align: center;
+  color: $white;
+  font-size: 20px;
+  cursor: pointer;
+  i {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.header-caps {
+  background-color: $sub-color;
+  padding: 8px 0;
+  color: $white;
+  font-size: 12px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+@include laptop {
+  .ly-header {
+    .container {
+      position: relative;
+    }
+  }
+  .site-name {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  .head-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-caps {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@include mobile {
+  .header-caps {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

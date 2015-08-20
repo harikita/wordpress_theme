@@ -1,0 +1,32 @@
+//
+// Footer
+//
+.ly-footer {
+  background-color: $footer-color;
+  padding: 20px 0;
+}
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+
+@include laptop {
+  .ly-footer {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+//
+// Base
+//
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ly-main {
+  padding: 30px 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ly-contents {
+  float: left;
+  width: $site-width - ($sidebar-width) - 60px;
+}
+
+.home .ly-contents {
+  width: $site-width - ($sidebar-width * 2) - 60px;
+}
+
+
+@include laptop {
+  .container {
+    width: auto;
+  }
+  .ly-main {
+    padding: 20px;
+  }
+  .ly-contents {
+    width: 100%;
+    float: left;
+    margin-right: - $sidebar-width;
+    .inner {
+      position: relative;
+      margin-right: $sidebar-width + 30px;
+    }
+  }
+  .home .ly-contents {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .ly-contents {
+    float: none;
+    margin-bottom: 30px;
+    .inner {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mobile {
+  .ly-contents {
+    margin-bottom: 0;
+  }
+  .ly-main {
+    padding: 0;
+  }
+}

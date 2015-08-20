@@ -1,91 +1,4 @@
 //
-// Base
-//
-body {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  font-family: $base-font-family;
-  color: $font-color;
-  -webkit-font-smoothing: antialiased;
-}
-a {
-  color: $link-color;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-.container {
-  width: $site-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-//
-// Header
-//
-.ly-header {
-  height: $header-height;
-  background-color: $key-color;
-  .container {
-    height: $header-height;
-    overflow: hidden;
-  }
-}
-.site-name {
-  float: left;
-  height: $header-height;
-  position: relative;
-  a {
-    color: $white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  img {
-    $logo-size: 24px;
-    height: $logo-size;
-    margin-top: 12px;
-  }
-}
-.head-search {
-  float: right;
-}
-.head-search__btn {
-  width: $header-height;
-  height: $header-height;
-  line-height: $header-height;
-  text-align: center;
-  color: $white;
-  font-size: 20px;
-  cursor: pointer;
-  i {
-    position: relative;
-    top: -2px;
-  }
-}
-.header-caps {
-  background-color: $sub-color;
-  padding: 8px 0;
-  color: $white;
-  font-size: 12px;
-  p {
-    margin: 0;
-  }
-  a {
-    color: $white;
-    font-weight: bold;
-  }
-}
-
-.ly-main {
-  padding: 30px 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-
-//
 // Sidebar
 //
 .ly-category,
@@ -95,13 +8,6 @@ a {
 .ly-category {
   float: left;
   margin-right: 30px;
-}
-.ly-contents {
-  float: left;
-  width: $site-width - ($sidebar-width) - 60px;
-}
-.home .ly-contents {
-  width: $site-width - ($sidebar-width * 2) - 60px;
 }
 .ly-sidebar {
   float: right;
@@ -115,7 +21,7 @@ a {
   margin: 0;
   padding: 0;
   li {
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px dotted $border-color;
   }
   a {
     padding: 12px 10px;
@@ -164,9 +70,9 @@ a {
     display: block;
     font-size: 18px;
   }
-  .fb a { background-color: #6571a3;}
-  .tw a { background-color: #83b5e2;}
-  .rss a { background-color: #f5a86c;}
+  .fb a { background-color: $fb-color;}
+  .tw a { background-color: $tw-color;}
+  .rss a { background-color: $rss-color;}
   .feedly {
     .icon{
       font-size: 0;
@@ -176,7 +82,7 @@ a {
       }
     }
     a {
-      background-color: #86c682;
+      background-color: $feedly-color;
     }
   }
 }
@@ -189,7 +95,7 @@ a {
   margin: 0;
   padding: 0;
   li {
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px dotted $border-color;
     &:last-child {
       border-bottom: 0;
     }
@@ -249,88 +155,13 @@ a {
 }
 
 
-//
-// Footer
-//
-.ly-footer {
-  background-color: $footer-color;
-  padding: 20px 0;
-}
-.footer-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    margin-right: 16px;
-  }
-  a {
-    color: $white;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-  }
-}
-
-
 @include laptop {
-  .ly-header {
-    .container {
-      position: relative;
-    }
-  }
-  .site-name {
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
-    float: none;
-  }
-  .head-search {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .container {
-    width: auto;
-  }
-  .ly-main {
-    padding: 20px;
-  }
-  .ly-category {
-    display: none;
-  }
-  .ly-contents {
-    width: 100%;
-    float: left;
-    margin-right: - $sidebar-width;
-    .inner {
-      position: relative;
-      margin-right: $sidebar-width + 30px;
-    }
-  }
-  .home .ly-contents {
-    width: 100%;
-  }
   .ly-sidebar {
     margin-left: 0;
-  }
-  .ly-footer,
-  .header-caps {
-    .container {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
   }
 }
 
 @include tablet {
-  .ly-contents {
-    float: none;
-    margin-bottom: 30px;
-    .inner {
-      margin-right: 0;
-    }
-  }
   .ly-sidebar {
     width: auto;
     float: none;
@@ -338,12 +169,6 @@ a {
 }
 
 @include mobile {
-  .ly-contents {
-    margin-bottom: 0;
-  }
-  .ly-main {
-    padding: 0;
-  }
   .sidebar-box {
     margin-bottom: 0;
   }
@@ -363,11 +188,5 @@ a {
   }
   .side-adsence {
     margin: 15px 0;
-  }
-  .header-caps {
-    .container {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
   }
 }

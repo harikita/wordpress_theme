@@ -21,7 +21,7 @@
   padding: 15px 0;
   height: 100%;
   overflow: hidden;
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px dotted $border-color;
   &:last-child {
     border-bottom: none;
   }
@@ -57,7 +57,7 @@
 .articles__date,
 .articles__views {
   margin: 0;
-  color: #888;
+  color: $gray-text-color;
   font-size: 13px;
 }
 .articles__date {
@@ -73,7 +73,7 @@
 .post__meta {
   height: 100%;
   overflow: hidden;
-  color: #888;
+  color: $gray-text-color;
   margin-bottom: 20px;
   i {
     margin-right: 5px;
@@ -95,7 +95,7 @@
   margin: 0 0 20px 0;
 }
 .post__description {
-  color: #888;
+  color: $gray-text-color;
   margin-bottom: 20px;
   p {
     margin: 0;
@@ -138,16 +138,16 @@
     margin-right: 5px;
   }
   .fb a {
-    background-color: #6571a3;
+    background-color: $fb-color;
   }
   .tw a {
-    background-color: #83b5e2;
+    background-color: $tw-color;
   }
   .line a {
-    background-color: #86c682;
+    background-color: $line-color;
   }
   .line img {
-    height: 20px;
+    height: 18px;
     vertical-align: middle;
   }
 }
@@ -237,7 +237,7 @@
       float: none;
       margin-right: 0;
       margin-bottom: 0;
-      border-bottom: 1px dotted #ccc;
+      border-bottom: 1px dotted $border-color;
       &:last-child {
         border-bottom: none;
       }
