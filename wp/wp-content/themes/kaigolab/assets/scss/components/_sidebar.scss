@@ -170,16 +170,20 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 150;
+  z-index: -100;
   width: 100%;
   height: 100%;
-  display: none;
+  opacity: 0;
 }
 .is-side-open {
   overflow: hidden;
   .side-menu,
   .side-menu-smoke {
     display: block;
+  }
+  .side-menu-smoke {
+    z-index: 150;
+    opacity: 1;
   }
 }
 

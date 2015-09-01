@@ -123,12 +123,15 @@
     margin-right: 10px;
   }
   a {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
     color: $white;
     font-weight: bold;
     border-radius: 4px;
     transition: .2s all ease-out;
+    border: none;
+    outline: 0;
+    cursor: pointer;
     &:hover {
       text-decoration: none;
       opacity: .7;
@@ -142,6 +145,9 @@
   }
   .tw a {
     background-color: $tw-color;
+  }
+  .line {
+    display: none;
   }
   .line a {
     background-color: $line-color;
@@ -222,12 +228,20 @@
      margin: 20px -15px;
      li {
        margin-right: 0;
-       width: 33.33%;
+       width: 33.333%;
      }
      a {
-       display: block;
        border-radius: 0;
        text-align: center;
+       padding-left: 0;
+       padding-right: 0;
+       width: 100%;
+       &:hover {
+         opacity: 1;
+       }
+     }
+     .line {
+       display: inline-block;
      }
   }
   .related-post {

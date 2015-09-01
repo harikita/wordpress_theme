@@ -38,10 +38,10 @@
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-check"></i>カイゴラボの最新情報をチェック</h2>
     <ul class="side-sns">
-      <li class="fb"><a href="#"><i class="icon fa fa-facebook"></i>Facebookページ</a></li>
-      <li class="tw"><a href="#"><i class="icon fa fa-twitter"></i>@kaigolab</a></li>
-      <li class="rss"><a href="#"><i class="icon fa fa-rss"></i>RSS</a></li>
-      <li class="feedly"><a href="#"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/feedly_icon.png" alt=""></i>Feedly</a></li>
+      <li class="fb"><a href="https://www.facebook.com/kaigolabjp" target="_blank"><i class="icon fa fa-facebook"></i>Facebookページ</a></li>
+      <li class="tw"><a href="https://twitter.com/kaigolabjp" target="_blank"><i class="icon fa fa-twitter"></i>@kaigolab</a></li>
+      <li class="rss"><a href="<?php echo home_url('/'); ?>feed" target="_blank"><i class="icon fa fa-rss"></i>RSS</a></li>
+      <li class="feedly"><a href="http://www.feedly.com/home#subscription/feed/<?php echo home_url('/'); ?>feed" target="_blank"><i class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/feedly_icon.png" alt=""></i>Feedly</a></li>
     </ul>
   </div>
   <div class="sidebar-box">
