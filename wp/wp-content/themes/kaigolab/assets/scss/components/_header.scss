@@ -4,6 +4,11 @@
 .ly-header {
   height: $header-height;
   background-color: $key-color;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 0;
   .container {
     height: $header-height;
     overflow: hidden;
@@ -88,6 +93,7 @@
   padding: 8px 0;
   color: $white;
   font-size: 12px;
+  margin-top: $header-height;
   p {
     margin: 0;
   }
@@ -97,12 +103,31 @@
   }
 }
 
+
 @include laptop {
   .ly-header {
     .container {
       position: relative;
     }
   }
+  .header-caps {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .site-name {
+    padding-left: 20px;
+  }
+  .head-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none;
+  }
+}
+
+@include mobile {
   .mobile-menu {
     display: block;
   }
@@ -115,15 +140,6 @@
   .head-search {
     display: none;
   }
-  .header-caps {
-    .container {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-}
-
-@include mobile {
   .header-caps {
     .container {
       padding-left: 15px;

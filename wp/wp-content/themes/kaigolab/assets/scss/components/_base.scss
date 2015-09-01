@@ -34,10 +34,6 @@ a {
   width: $site-width - ($sidebar-width) - 30px;
 }
 
-.home .ly-contents {
-  width: $site-width - ($sidebar-width * 2) - 60px;
-}
-
 
 @include laptop {
   .container {

@@ -154,6 +154,155 @@
   }
 }
 
+.side-menu {
+  background-color: #f1f1f1;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  box-shadow: 3px 0 12px rgba(0,0,0,.2);
+  display: none;
+}
+.side-menu-smoke {
+  background-color: rgba(#000,.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 150;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.is-side-open {
+  overflow: hidden;
+  .side-menu,
+  .side-menu-smoke {
+    display: block;
+  }
+}
+
+.side-menu-close {
+  text-align: center;
+  padding: 0 10px;
+  height: $header-height;
+  line-height: $header-height;
+  background-color: $link-color;
+  color: $white;
+  font-weight: bold;
+  cursor: pointer;
+  i {
+    margin-right: 5px;
+  }
+}
+
+.side-menu-search {
+  padding: 10px;
+  height: 60px;
+  box-sizing: border-box;
+  input {
+    border: none;
+    background-color: $white;
+    height: 40px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1) inset;
+  }
+  input::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: normal;
+  }
+  input:-moz-placeholder {
+    color: #ccc;
+    font-weight: normal;
+  }
+}
+
+.side-menu-category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: block;
+    border-bottom: 1px dotted #eee;
+    box-sizing: border-box;
+  }
+  a {
+    padding: 10px;
+    display: block;
+    position: relative;
+    transition: .2s all ease-out;
+    font-weight: bold;
+    background-color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -6px;
+      color: #ccc;
+    }
+  }
+}
+
+
+.scroll-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  & > .scroll-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    &:focus {
+      outline: thin dotted;
+    }
+  }
+  & > .scroll-content::-webkit-scrollbar {
+    display: none;
+  }
+  & > .scroll-pane {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0);
+    opacity: .01;
+    transition: .2s all ease-out;
+    & > .scroll-slider {
+      position: relative;
+      margin: 0 1px;
+      background: rgba(0,0,0,.3);
+      border-radius: 4px;
+    }
+  }
+  &:hover {
+    & > .scroll-pane,
+    .scroll-pane.active,
+    .scroll-pane.flashed {
+      opacity    : 0.99;
+    }
+  }
+}
+.has-scrollbar > .scroll-content::-webkit-scrollbar {
+  display: block;
+}
+
+
 
 @include laptop {
   .ly-sidebar {

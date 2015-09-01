@@ -15,11 +15,6 @@
     get_template_part('templates/header');
   ?>
   <div class="ly-main container">
-    <?php
-      if(is_home()){
-        get_template_part('templates/category');
-      }
-    ?>
     <div class="ly-contents">
       <div class="inner">
         <?php include Layout\template_path(); ?>

@@ -1,6 +1,8 @@
 {
+  "name": "kaigolab",
   "devDependencies": {
     "jquery": "~2.1.4",
-    "fontawesome": "~4.4.0"
+    "fontawesome": "~4.4.0",
+    "nanoscroller": ">=0.8.5"
   }
 }
