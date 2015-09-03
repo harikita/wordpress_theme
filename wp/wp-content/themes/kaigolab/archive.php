@@ -12,4 +12,9 @@
   <i class="fa fa-tags"></i><?php single_tag_title(); ?>の記事一覧
   <?php endif; ?>
 </h2>
-<?php get_template_part('templates/loop'); ?>
+<?php
+  get_template_part('templates/loop');
+  if(function_exists('wp_pagenavi')) {
+    wp_pagenavi();
+  }
+?>

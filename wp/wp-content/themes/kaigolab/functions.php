@@ -14,3 +14,10 @@ foreach ($lib_includes as $file) {
     require_once $filepath;
 }
 unset($file, $filepath);
+
+function show_page_number() {
+    global $wp_query;
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $max_page = $wp_query->max_num_pages;
+    return $paged;
+}
