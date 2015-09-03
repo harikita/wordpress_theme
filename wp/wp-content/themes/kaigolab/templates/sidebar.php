@@ -9,6 +9,9 @@
       'thumbnail_height' => 100,
       'post_html' => "<li><a href=\'{url}\'><div class='thumb'>{thumb_img}</div><div class='text'>{text_title}</div></a></li>"
     )); ?>
+    <div class="sidebar-more no-mgn">
+      <a href="/ranking" class="btn primary">もっと見る</a>
+    </div>
   </div>
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-folder-open"></i>カテゴリ</h2>
@@ -33,7 +36,14 @@
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-tags"></i>人気のキーワード</h2>
     <div class="tag-cloud">
-      <?php wp_tag_cloud(); ?>
+      <?php wp_tag_cloud(array(
+        'number' => 10,
+        'orderby' => 'count',
+        'order' => 'DESC'
+      )); ?>
+    </div>
+    <div class="sidebar-more">
+      <a href="/tags" class="btn primary">もっと見る</a>
     </div>
   </div>
   <div class="sidebar-box">

@@ -19,6 +19,22 @@
 //
 .post__wrap {
   margin-bottom: 30px;
+  .wpp-list {
+    height: 100%;
+    overflow: hidden;
+    li {
+      width: 48%;
+      margin-right: 4%;
+      float: left;
+      display: block;
+      box-sizing: border-box;
+      clear: none;
+      border-bottom: none;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+    }
+  }
 }
 .articles {
   padding: 15px 0;
@@ -311,6 +327,19 @@
   border-radius: 4px;
 }
 
+@include laptop {
+  .post__wrap {
+    .wpp-list {
+      li {
+        width: auto;
+        float: none;
+        border-bottom: 1px dotted #ddd;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 @include mobile {
   .section-title {
     border-radius: 0;
@@ -333,6 +362,12 @@
   .post__wrap {
     padding: 15px;
     margin-bottom: 0;
+    .tag-cloud {
+      margin: 0;
+    }
+    .wpp-list {
+      margin: -15px;
+    }
   }
   .post__share {
      margin: 20px -15px;
@@ -380,6 +415,9 @@
   }
   .article-more {
     margin: 15px;
+    .btn {
+      display: block;
+    }
   }
   .post_pagelike {
     margin-top: 0;
