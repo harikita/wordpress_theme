@@ -1,4 +1,5 @@
 <div class="ly-sidebar">
+  <?php if(!is_page('ranking')): ?>
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-thumbs-up"></i>ランキング</h2>
     <?php wpp_get_mostpopular(array(
@@ -13,6 +14,7 @@
       <a href="/ranking" class="btn primary">もっと見る</a>
     </div>
   </div>
+  <?php endif; ?>
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-folder-open"></i>カテゴリ</h2>
     <ul class="sidebar-category">
@@ -33,6 +35,7 @@
       ?>
     </ul>
   </div>
+  <?php if(!is_page('tags')): ?>
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-tags"></i>人気のキーワード</h2>
     <div class="tag-cloud">
@@ -46,6 +49,7 @@
       <a href="/tags" class="btn primary">もっと見る</a>
     </div>
   </div>
+  <?php endif; ?>
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-check"></i>カイゴラボの最新情報をチェック</h2>
     <ul class="side-sns">

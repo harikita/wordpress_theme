@@ -7,7 +7,7 @@ if (have_posts()) : while(have_posts()) : the_post(); ?>
     <?php the_content(); ?>
     <?php wpp_get_mostpopular(array(
       'order_by' => 'views',
-      'limit' => 10,
+      'limit' => 20,
       'post_type' => 'post',
       'thumbnail_width' => 100,
       'thumbnail_height' => 100,
