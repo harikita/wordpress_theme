@@ -48,7 +48,16 @@
   <div class="sidebar-box">
     <h2 class="section-title"><i class="fa fa-bullhorn"></i>PR</h2>
     <div class="side-adsence">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dummy_ad.png">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- KAIGO LAB -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1318610812648232"
+          data-ad-slot="5921468504"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
   </div>
 </div>

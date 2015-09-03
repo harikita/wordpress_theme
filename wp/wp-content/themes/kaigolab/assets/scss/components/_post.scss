@@ -17,6 +17,9 @@
 //
 // Articles
 //
+.post__wrap {
+  margin-bottom: 30px;
+}
 .articles {
   padding: 15px 0;
   height: 100%;
@@ -271,6 +274,35 @@
   margin-top: 20px;
 }
 
+.post_pagelike {
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-top: 15px;
+  border: 1px solid #eee;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  .thumb {
+    width: 100px;
+    float: left;
+    font-size: 0;
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  .text {
+    margin-left: 115px;
+    p {
+      margin: 20px 0 10px 0;
+    }
+  }
+  .fb-page {
+    display: inline-block;
+    width: 500px;
+  }
+}
+
 @include mobile {
   .section-title {
     border-radius: 0;
@@ -292,6 +324,7 @@
   }
   .post__wrap {
     padding: 15px;
+    margin-bottom: 0;
   }
   .post__share {
      margin: 20px -15px;
@@ -329,6 +362,23 @@
       padding: 15px;
       height: 100%;
       overflow: hidden;
+    }
+  }
+  .yarpp-related {
+    margin-top: 0;
+  }
+  .wp-pagenavi {
+    margin: 15px;
+  }
+  .article-more {
+    margin: 15px;
+  }
+  .post_pagelike {
+    margin-top: 0;
+    border: none;
+    background-color: $white;
+    .text p {
+      margin-top: 10px;
     }
   }
 }

@@ -377,7 +377,8 @@ a {
 .ly-main {
   padding: 30px 0;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
 
 .ly-contents {
   float: left;
@@ -875,6 +876,9 @@ a {
   .section-title i {
     margin-right: 5px; }
 
+.post__wrap {
+  margin-bottom: 30px; }
+
 .articles {
   padding: 15px 0;
   height: 100%;
@@ -1102,6 +1106,29 @@ a {
   text-align: center;
   margin-top: 20px; }
 
+.post_pagelike {
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-top: 15px;
+  border: 1px solid #eee;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .post_pagelike .thumb {
+    width: 100px;
+    float: left;
+    font-size: 0; }
+    .post_pagelike .thumb img {
+      width: 100px;
+      height: auto; }
+  .post_pagelike .text {
+    margin-left: 115px; }
+    .post_pagelike .text p {
+      margin: 20px 0 10px 0; }
+  .post_pagelike .fb-page {
+    display: inline-block;
+    width: 500px; }
+
 @media only screen and (max-width: 600px) {
   .section-title {
     border-radius: 0; }
@@ -1116,7 +1143,8 @@ a {
   .articles__title {
     font-size: 16px; }
   .post__wrap {
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: 0; }
   .post__share {
     margin: 20px -15px; }
     .post__share li {
@@ -1145,4 +1173,16 @@ a {
     .related-post a {
       padding: 15px;
       height: 100%;
-      overflow: hidden; } }
+      overflow: hidden; }
+  .yarpp-related {
+    margin-top: 0; }
+  .wp-pagenavi {
+    margin: 15px; }
+  .article-more {
+    margin: 15px; }
+  .post_pagelike {
+    margin-top: 0;
+    border: none;
+    background-color: #fff; }
+    .post_pagelike .text p {
+      margin-top: 10px; } }
