@@ -6,13 +6,13 @@
     <div class="post__author"><i class="fa fa-pencil"></i><?php the_author(); ?></div>
   </div>
   <h1 class="post__title"><?php the_title(); ?></h1>
-  <div class="post__description">
+  <!-- div class="post__description">
     <?php the_excerpt(); ?>
-  </div>
+  </div -->
   <?php get_template_part('templates/share'); ?>
-  <div class="post__thumb">
+  <!-- div class="post__thumb">
     <?php the_post_thumbnail('full'); ?>
-  </div>
+  </div -->
   <div class="post__body">
     <?php the_content(); ?>
   </div>
