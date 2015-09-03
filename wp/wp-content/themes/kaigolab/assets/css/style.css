@@ -1129,6 +1129,13 @@ a {
     display: inline-block;
     width: 500px; }
 
+.alert {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 4px; }
+
 @media only screen and (max-width: 600px) {
   .section-title {
     border-radius: 0; }

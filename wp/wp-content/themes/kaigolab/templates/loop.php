@@ -12,4 +12,15 @@
     </div>
   </div>
 </div>
-<?php endwhile; endif; ?>
+<?php endwhile; else: ?>
+
+<div class="alert">
+<?php
+  if(is_search()):
+  $q = esc_html(get_search_query(false));
+?>
+「<?php echo $q; ?>」で検索したところ、該当する記事がありませんでした。
+<?php endif; ?>
+</div>
+
+<?php endif; ?>

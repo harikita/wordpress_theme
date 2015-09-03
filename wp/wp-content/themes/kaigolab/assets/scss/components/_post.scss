@@ -303,6 +303,14 @@
   }
 }
 
+.alert {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
 @include mobile {
   .section-title {
     border-radius: 0;
