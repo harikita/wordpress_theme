@@ -49,6 +49,7 @@ $logo = get_field('logo_img', 'option');
       <ul class="side-menu-category">
         <?php
           $cats = get_terms('category', array(
+            'orderby' => 'order',
             'hide_empty' => false
           ));
           $catList = "";

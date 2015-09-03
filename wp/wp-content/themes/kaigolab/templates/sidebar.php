@@ -15,6 +15,7 @@
     <ul class="sidebar-category">
       <?php
         $cats = get_terms('category', array(
+          'orderby' => 'order',
           'hide_empty' => false
         ));
         $catList = "";
