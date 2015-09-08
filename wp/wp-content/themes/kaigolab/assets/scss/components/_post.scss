@@ -327,6 +327,91 @@
   border-radius: 4px;
 }
 
+.form-wrap {
+  border-top: 1px solid #eee;
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border-radius: 4px;
+    outline: 0;
+    width: 260px;
+    background-color: #fafafa;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06) inset;
+    box-sizing: border-box;
+    &:focus {
+      background-color: $white;
+      box-shadow: none;
+      border-color: $key-color;
+    }
+  }
+  select {
+    background: none;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    outline: 0;
+    &:focus {
+      border-color: $key-color;
+    }
+  }
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    background-color: $link-color;
+    color: $white;
+    border: none;
+    padding: 12px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    transition: .2s all ease-out;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  .btn-list {
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip {
+  display: block;
+  color: #ff5353 !important;
+  padding: 8px 10px !important;
+  border: 1px solid #ff5353 !important;
+  background-color: #ffecec;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.form-list {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  dt, dd {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 25px 20px;
+  }
+  dt {
+    width: 35%;
+    background: #f5f5f5;
+    font-weight: bold;
+  }
+  dd {
+    width: 65%;
+  }
+}
+
 @include laptop {
   .post__wrap {
     .wpp-list {
@@ -336,6 +421,16 @@
         border-bottom: 1px dotted #ddd;
         margin-right: 0;
       }
+    }
+  }
+  .form-wrap {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      display: block;
     }
   }
 }
@@ -425,6 +520,29 @@
     background-color: $white;
     .text p {
       margin-top: 10px;
+    }
+  }
+  .form-wrap {
+    margin: 0 -15px;
+    .btn-list {
+      margin: 15px 0;
+    }
+  }
+  .form-list {
+    display: block;
+    dt, dd {
+      display: block;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      padding: 20px 15px;
+    }
+    dt {
+      padding: 10px 15px;
+    }
+    select {
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 }

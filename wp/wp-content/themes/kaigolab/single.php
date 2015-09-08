@@ -20,7 +20,7 @@
 </div>
 
 <h2 class="section-title"><i class="fa fa-thumbs-up"></i>この記事が気に入ったら「いいね！」しよう</h2>
-<div class="post_pagelike">
+<div class="post_pagelike" style="margin-bottom: 30px;">
   <div class="thumb">
     <?php the_post_thumbnail('thumbs'); ?>
   </div>
@@ -28,6 +28,11 @@
     <p>KAIGOLABの最新情報をお届けします。</p>
     <div class="fb-like" data-href="https://www.facebook.com/kaigolabjp" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
   </div>
+</div>
+
+<h2 class="section-title" ><i class="fa fa-tags"></i>この記事についてのタグリスト</h2>
+<div class="tag-cloud">
+  <?php the_tags('','',''); ?>
 </div>
 
 <?php endwhile; endif; ?>

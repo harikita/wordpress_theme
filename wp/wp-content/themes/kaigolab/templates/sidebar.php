@@ -60,8 +60,8 @@
     </ul>
   </div>
   <div class="sidebar-box">
-    <!-- h2 class="section-title"><i class="fa fa-bullhorn"></i>PR</h2 -->
-    <div class="side-adsence" style="height:0 !important;">
+    <h2 class="section-title"><i class="fa fa-bullhorn"></i>PR</h2>
+    <div class="side-adsence">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- KAIGO LAB -->
       <ins class="adsbygoogle"
